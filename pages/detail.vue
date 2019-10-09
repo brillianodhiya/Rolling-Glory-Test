@@ -32,13 +32,13 @@
                         </div>
                     </div>
                     <div class="row buttonlist">
-                        <div class="col-sm-2">
+                        <div class="col-sm-2 btns">
                             <button class="btn btn-outline-secondary btnstock" type="button"><i class="fa fa-heart"></i></button>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 btns">
                             <button class="btn green">Redeem</button>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 btns">
                             <button class="btn btn-outline-success cart">Add to cart</button>
                         </div>
                     </div>
@@ -103,6 +103,7 @@
     margin-top: 25px;
     .btnstock {
         background-color: #E7246B;
+        position: relative;
         border-radius: 100px;
         border: 1px solid #E7246B;
         width: 60px;
@@ -113,6 +114,7 @@
         }
     }
     .green {
+        position: relative;
         background: #006A4E;
         color: white;
         border-radius: 100px;
@@ -120,8 +122,12 @@
         font-size: 15px;
     }
     .cart {
+        position: relative;
         border-radius: 100px;
         font-size: 15px;
+    }
+    .btns {
+        position: relative;
     }
 }
 .card {
@@ -137,7 +143,7 @@
 }
 .keterangan {
     font-family: 'MyWebFont';
-    padding-top: 150px;
+    padding-top: 110px;
 
     h5 {
         color: #74B71B;
@@ -157,7 +163,43 @@
             color: #006A4E;
         }
         .rincian-detail {
-            line-height: 2.3;
+            line-height: 2.2;
+        }
+    }
+}
+@media (min-width: 768px) {  
+    .buttonlist {
+        .btnstock {
+            width: 40px;
+        }
+        .green {
+            width: 90px;
+        }
+        .cart {
+            width: 100px;
+        }
+    }
+}
+    
+@media (min-width: 992px) { 
+    .buttonlist {
+        .green {
+            width: 140px;
+        }
+        .cart {
+            width: 140px;
+        }
+    }
+}
+    
+@media (min-width: 1200px) {  
+    .buttonlist {
+
+        .green {
+            width: 140px;
+        }
+        .cart {
+            width: 130px;
         }
     }
 }
